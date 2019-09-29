@@ -24,7 +24,7 @@ public class GmailSelenium {
         driver.get("https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
 
         //Find the email input filed and seed it your email address
-        driver.findElement(By.id("identifierId")).sendKeys("fireayehuzekarias1989@gmail.com");
+        driver.findElement(By.id("identifierId")).sendKeys("your-email@mail.com");
 
         //Find the Next button and click it
         driver.findElement(By.id("identifierNext")).click();
@@ -34,7 +34,7 @@ public class GmailSelenium {
         wait.until(elementToBeClickable(By.id("passwordNext")));
         Thread.sleep(2000);
         //Find the password input filed and seed it your password
-        driver.findElement(By.name("password")).sendKeys("F&z656638");
+        driver.findElement(By.name("password")).sendKeys("your-password");
 
         //Find the Next(Login) button and click it
         driver.findElement(By.id("passwordNext")).click();
